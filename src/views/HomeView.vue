@@ -3,6 +3,12 @@
   
   const prenom = ref('')
   const nom = ref('')
+
+  const emit = defineEmits(['send-message'])
+
+  function envoyer() {
+    emit('send-message', `${prenom.value} ${nom.value}`)
+  }
   
 </script>
 <template>
@@ -19,11 +25,12 @@
       <input id="nom" v-model="nom" type="text" placeholder="Écris ton nom" />
     </div>
 
-    <p v-if="nom || prenom">
+    <div v-if="nom && prenom">
       {{ nom }} {{ prenom }}
-    </p>
-
+      <RouterLink to="/info" @click="envoyer">S'enregistrer</RouterLink>
+    </div>
   </div>
+
 </template>
 
 

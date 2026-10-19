@@ -1,13 +1,29 @@
 <script setup>
+import {ref} from 'vue'
+import HomeView from './HomeView.vue'
 
-// const emit = defineEmits(['send-message']);
+const message = ref('')
 
-// function envoyer() {
-//     emit('send-message', 'bonjour michel');
-// }
+function recevoir(texte){
+    message.value = texte
+}
 
 </script>
 
+
 <template>
-    test
+
+    <MessageButton @send-message="recevoir" />
+    <p>{{ message }}</p>
+
+    <h2>Connaissez-vous Michel ?</h2>
+    <div class="choix">
+        <RouterLink to="/michel">Oui</RouterLink>
+        <RouterLink to="/">Non</RouterLink>
+    </div>
 </template>
+
+
+<style scoped>
+
+</style>

@@ -3,10 +3,8 @@
 </script>
 
 <template>
-  <nav>
-    <RouterLink to="/">Accueil</RouterLink>
-    <RouterLink to="/info">S'enregistrer</RouterLink>
-  </nav>
+  
+  <RouterView />
 </template>
 
 <style scoped>
