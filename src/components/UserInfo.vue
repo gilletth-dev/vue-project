@@ -1,11 +1,12 @@
 <script setup>
   import { ref } from 'vue'
-  
+ 
   const prenom = ref('')
   const nom = ref('')
   
 </script>
 <template>
+  
   <div class="formulaire">
     <h2>Informations utilisateur</h2>
 
@@ -32,7 +33,7 @@
 .formulaire {
   max-width: 400px;
   margin: 50px auto;
-  text-align: center;
+ 
 }
 
 .info {
@@ -49,8 +50,7 @@ input {
   width: 80%;
 }
 
-button {
-  padding: 6px 16px;
-  cursor: pointer;
-}
+
+
+
 </style>
