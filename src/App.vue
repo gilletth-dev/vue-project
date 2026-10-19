@@ -8,7 +8,9 @@ import InfoView from './components/InfoView.vue';
 
 <template>
   <UserInfo />
-  <InfoView />
+  <nav>
+    <RouterLink to="/info">S'enregistrer</RouterLink>
+  </nav>
 </template>
 
 <style scoped>

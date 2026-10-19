@@ -23,7 +23,6 @@
       {{ nom }} {{ prenom }}
     </p>
 
-    <RouterLink to="/info">S'enregistrer</RouterLink>
   </div>
 </template>
 

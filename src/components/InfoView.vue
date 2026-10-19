@@ -1,13 +1,13 @@
 <script setup>
 
-const emit = defineEmits(['send-message']);
+// const emit = defineEmits(['send-message']);
 
-function envoyer() {
-    emit('send-message', 'bonjour michel');
-}
+// function envoyer() {
+//     emit('send-message', 'bonjour michel');
+// }
 
 </script>
 
 <template>
-    <button @click="envoyer">Envoyer</button>
+    test
 </template>
