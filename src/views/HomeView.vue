@@ -1,8 +1,21 @@
 <script setup>
   import { ref } from 'vue'
-  
+  import userData from '../data/user.js'
+
   const prenom = ref('')
   const nom = ref('')
+
+  const emit = defineEmits(['send-message'])
+
+  function envoyer() {
+    const informations = {
+      prenom: prenom.value,
+      nom: nom.value
+    }
+    userData.prenom = informations.prenom
+    userData.nom = informations.nom
+    emit('send-message', informations)
+  }
   
 </script>
 <template>
@@ -19,12 +32,12 @@
       <input id="nom" v-model="nom" type="text" placeholder="Écris ton nom" />
     </div>
 
-    <p v-if="nom || prenom">
+    <div v-if="nom && prenom">
       {{ nom }} {{ prenom }}
-    </p>
-
-    <RouterLink to="/info">S'enregistrer</RouterLink>
+      <RouterLink to="/info" @click="envoyer">S'enregistrer</RouterLink>
+    </div>
   </div>
+
 </template>
 
 
