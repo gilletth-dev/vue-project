@@ -1,20 +1,15 @@
 <script setup>
-import {ref} from 'vue'
-import HomeView from './HomeView.vue'
+import userData from '../data/user.json'
 
-const message = ref('')
-
-function recevoir(texte){
-    message.value = texte
-}
-
+const donneesUtilisateur = userData
 </script>
 
 
 <template>
 
-    <MessageButton @send-message="recevoir" />
-    <p>{{ message }}</p>
+    <p v-if="donneesUtilisateur.prenom && donneesUtilisateur.nom">
+        Bonjour {{ donneesUtilisateur.prenom }} {{ donneesUtilisateur.nom }}
+    </p>
 
     <h2>Connaissez-vous Michel ?</h2>
     <div class="choix">
