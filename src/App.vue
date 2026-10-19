@@ -1,14 +1,10 @@
 <script setup>
-import { ref } from 'vue'
-import UserInfo from './components/UserInfo.vue';
-import InfoView from './components/InfoView.vue';
-// import MessageButton from './components/MessageButton.vue';
 
 </script>
 
 <template>
-  <UserInfo />
   <nav>
+    <RouterLink to="/">Accueil</RouterLink>
     <RouterLink to="/info">S'enregistrer</RouterLink>
   </nav>
 </template>

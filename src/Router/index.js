@@ -1,11 +1,11 @@
 import { createRouter, createWebHistory } from "vue-router";
-import UserInfo from "../components/UserInfo.vue";
-import InfoView from "../components/InfoView.vue";
+import HomeView from "../views/HomeView.vue";
+import InfoView from "../views/InfoView.vue";
 
 export default createRouter({
     history: createWebHistory(),
     routes: [
-        {path: '/', component: UserInfo},
+        {path: '/', component: HomeView},
         {path: '/info', component: InfoView}
     ]
 })
