@@ -1,19 +1,19 @@
 <script setup>
 
-const emit = defineEmits(['send-message']);
+/* const emit = defineEmits(['send-message']);
 
 function envoyer() {
     emit('send-message', 'bonjour michel');
-}
+} */
 
 </script>
-
+<!-- 
 <template>
     <button @click="envoyer">Envoyer</button>
-</template>
+</template> -->
 
 <style scoped>
-button{
+/* button{
   position: relative;
   font-size: 1.5rem;
   text-transform: uppercase;
@@ -43,7 +43,7 @@ button:hover::before{
   transform-origin: right;
   transition: transform 0.5s ease;
   transform: scaleX(0);
-}
+} */
 
 
 

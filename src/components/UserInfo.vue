@@ -31,9 +31,12 @@
 
 <style scoped>
 .formulaire {
+  background-color: #fffdfd;
+  filter: drop-shadow(3px 4px 94px rgba(0,119,182, 0.7));
+  padding: 50px;
   max-width: 400px;
-  margin: 50px auto;
- 
+  margin: 0px auto;
+  border-radius: 20px;
 }
 
 .info {
