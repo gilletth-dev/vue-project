@@ -1,9 +1,7 @@
 <script setup>
   import { ref } from 'vue'
-  import userData from '../data/user.json'
+  import userData from '../data/user.js'
 
-  const donneesUtilisateur = userData
-  
   const prenom = ref('')
   const nom = ref('')
 
@@ -14,8 +12,8 @@
       prenom: prenom.value,
       nom: nom.value
     }
-    donneesUtilisateur.prenom = informations.prenom
-    donneesUtilisateur.nom = informations.nom
+    userData.prenom = informations.prenom
+    userData.nom = informations.nom
     emit('send-message', informations)
   }
   

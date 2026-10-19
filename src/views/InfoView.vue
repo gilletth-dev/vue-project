@@ -1,14 +1,14 @@
 <script setup>
-import userData from '../data/user.json'
-
-const donneesUtilisateur = userData
+import userData from '../data/user.js'
+console.log(userData.prenom)
+console.log("test")
 </script>
 
 
 <template>
-
-    <p v-if="donneesUtilisateur.prenom && donneesUtilisateur.nom">
-        Bonjour {{ donneesUtilisateur.prenom }} {{ donneesUtilisateur.nom }}
+    
+    <p v-if="userData.prenom && userData.nom">
+        Bonjour {{ userData.prenom }} {{ userData.nom }}
     </p>
 
     <h2>Connaissez-vous Michel ?</h2>
