@@ -2,10 +2,16 @@
 import userData from '../data/user.js'
 console.log(userData.prenom)
 console.log("test")
+
+import ParticleBackground from './ParticleBackground.vue'
 </script>
 
 
 <template>
+
+    <div class="background">
+        <ParticleBackground />
+    </div>
 
     <RouterLink to="/" class="logo">
         Michel FOREVER
@@ -24,6 +30,18 @@ console.log("test")
 
 
 <style scoped>
+
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.5;
+  z-index: -1;
+}
+
 .logo {
   position: absolute;
   top: 20px;

@@ -1,6 +1,7 @@
 <script setup>
   import { ref } from 'vue'
   import userData from '../data/user.js'
+  import ParticleBackground from './ParticleBackground.vue'
 
   const prenom = ref('')
   const nom = ref('')
@@ -16,9 +17,21 @@
     userData.nom = informations.nom
     emit('send-message', informations)
   }
+
+
+  const rand = ( max = 1, min = 0, round = false ) => {
+  const n = Math.random() * ( max - min ) + min;
+  return round ? Math.round( n ) : n;
+};
+
   
 </script>
 <template>
+  
+  <div class="background">
+    <ParticleBackground />
+  </div>
+    
   <RouterLink to="/" class="logo">
     Michel FOREVER
   </RouterLink>
@@ -47,12 +60,24 @@
         <RouterLink to="/info" @click="envoyer">S'enregistrer</RouterLink>
       </div>
     </div>
+  
   </div>
+  
   
 </template>
 
 
 <style scoped>
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.5;
+  z-index: -1;
+}
+
 
 .logo {
   position: absolute;

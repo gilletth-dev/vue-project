@@ -2,10 +2,15 @@
 import { ref } from 'vue'
 import userData from '../data/user.js'
 import HomeView from './HomeView.vue'
+import ParticleBackground from './ParticleBackground.vue'
 </script>
 
 
 <template>
+  <div class="background">
+    <ParticleBackground />
+  </div>
+
   <RouterLink to="/" class="logo">
     Michel FOREVER
   </RouterLink>
@@ -23,6 +28,17 @@ import HomeView from './HomeView.vue'
 
 
 <style scoped>
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+
 .logo {
   position: absolute;
   top: 20px;
@@ -42,4 +58,8 @@ h2 {
   color: #ebeff1;
 }
 
+
+iframe{
+  filter: drop-shadow(3px 4px 94px rgba(0,119,182, 0.7));
+}
 </style>

@@ -84,4 +84,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: flex;
+  /* background-image: url('../assets/forme.svg');
+  background-size: 20%;
+  background-position: left bottom;
+  background-repeat: no-repeat; */
 }
