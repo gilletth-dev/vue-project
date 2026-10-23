@@ -113,7 +113,7 @@ p{
 }
 
 .formulaire {
-  background-color: #282828;
+  background-color: #1E263B;
   filter: drop-shadow(3px 4px 94px rgba(0,119,182, 0.7));
   padding: 50px;
   max-width: 400px;

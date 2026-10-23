@@ -3,6 +3,7 @@ import { ref } from 'vue'
 import userData from '../data/user.js'
 import HomeView from './HomeView.vue'
 import ParticleBackground from './ParticleBackground.vue'
+
 </script>
 
 
