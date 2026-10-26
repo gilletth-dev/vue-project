@@ -61,6 +61,9 @@ h2 {
 
 
 iframe{
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
   filter: drop-shadow(3px 4px 94px rgba(0,119,182, 0.7));
 }
 </style>
