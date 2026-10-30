@@ -96,6 +96,7 @@ h1{
   font-style: normal;
   padding: 0px 0px 20px 0px;
   color: #ebeff1;
+  font-size: 40px;
 }
 
 p{
@@ -104,6 +105,7 @@ p{
   font-style: normal;
   padding: 0px 0px 50px 0px;
   color: #ebeff1;
+  font-size: 16px;
 }
 
 .page{
@@ -125,6 +127,7 @@ h2 {
   font-family: "Lora", serif;
   font-optical-sizing: auto;
   font-style: normal;
+  font-size: 22px;
   margin-bottom: 20px;
   color: #ebeff1;
 }
@@ -162,6 +165,33 @@ input {
   font-style: normal;
   color: #ebeff1;
 }
+
+
+@media (min-width: 768px) {
+  .formulaire {
+    max-width: 800px;
+    padding : 80px;
+  }
+
+  h2{
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+
+  p{
+  font-size: 20px;
+  }
+
+
+  label{
+    font-size: 20px;
+  }
+
+  input{
+    font-size: 16px;
+  }
+}
+
 
 
 </style>

@@ -66,4 +66,16 @@ iframe{
   aspect-ratio: 16 / 9;
   filter: drop-shadow(3px 4px 94px rgba(0,119,182, 0.7));
 }
+
+@media (min-width: 768px) {
+ 
+
+  h2{
+    font-size: 30px;
+    
+  }
+
+  
+
+   }
 </style>

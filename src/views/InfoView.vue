@@ -68,4 +68,21 @@ p{
   font-style: normal;
   color: #ebeff1;
 }
+
+
+@media (min-width: 768px) {
+
+  h2{
+    font-size: 30px;
+   
+  }
+
+  p{
+  font-size: 20px;
+  }
+
+  a{
+    font-size: 20px;
+  }
+ }
 </style>
